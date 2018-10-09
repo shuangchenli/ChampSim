@@ -210,6 +210,9 @@ class CACHE : public MEMORY {
              find_victim(uint32_t cpu, uint64_t instr_id, uint32_t set, const BLOCK *current_set, uint64_t ip, uint64_t full_addr, uint32_t type),
              llc_find_victim(uint32_t cpu, uint64_t instr_id, uint32_t set, const BLOCK *current_set, uint64_t ip, uint64_t full_addr, uint32_t type),
              lru_victim(uint32_t cpu, uint64_t instr_id, uint32_t set, const BLOCK *current_set, uint64_t ip, uint64_t full_addr, uint32_t type);
+
+    void slimAmpm_filter_and_issue_prefetches(uint64_t ip, int entry_id, int page_index, unsigned long long int addr);
+    void schedule_prefetch_to_dram(uint64_t ip);
 };
 
 #endif

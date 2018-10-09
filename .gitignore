@@ -1,0 +1,15 @@
+./pin-3.2/
+./pin
+*.tr
+*log
+*.bak
+*.o
+*.a
+*.so
+*.gz
+./results*/
+./trace*/
+./gapbs/
+*txt
+./bin/
+./obj/
