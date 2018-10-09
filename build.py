@@ -2,7 +2,7 @@
 import os
 
 case = ['no','spp_dev','next_line','kpcp','vldp','slimAmpm','hybridVldp','optAmpm','bestoffset']
-test = ['hybridVldp']
+test = ['bestoffset']
 
 for key in test:
   cmd = "./shbuild_champsim.sh perceptron no " + key + " lru 1"

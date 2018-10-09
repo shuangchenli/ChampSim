@@ -213,6 +213,7 @@ class CACHE : public MEMORY {
 
     void slimAmpm_filter_and_issue_prefetches(uint64_t ip, int entry_id, int page_index, unsigned long long int addr);
     void schedule_prefetch_to_dram(uint64_t ip);
+    int issue_prefetch(uint64_t ip, uint64_t lineaddr, int offset);
 };
 
 #endif
