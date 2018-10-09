@@ -1,5 +1,5 @@
-./pin-3.2/
-./pin
+/pin-3.2/
+pin
 *.tr
 *log
 *.bak
@@ -7,9 +7,9 @@
 *.a
 *.so
 *.gz
-./results*/
-./trace*/
-./gapbs/
+/results*
+/trace*
+/gapbs
 *txt
-./bin/
-./obj/
+/bin
+/obj
