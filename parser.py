@@ -2,7 +2,7 @@
 import os
 
 case = ['no','spp_dev','next_line','kpcp','vldp','slimAmpm','hybridVldp','optAmpm','bestoffset']
-case_test = ['no','spp_dev','next_line','kpcp','vldp','slimAmpm','hybridVldp']
+case_test = ['no','spp_dev','next_line','kpcp','vldp','slimAmpm','hybridVldp','bestoffset']
 
 ap_test = ['astar_23B','lbm_94B','mcf_46B','omnetpp_17B', 'xalancbmk_99B', 'gcc_13B', 'libquantum_964B', 'milc_360B', 'soplex_66B', 'zeusmp_100B']
 n_warm = 10 #M
@@ -59,3 +59,6 @@ def parser_graph():
 def main():
   parser_graph()
   #parser_benchmark()
+
+if __name__ == "__main__":
+  main()

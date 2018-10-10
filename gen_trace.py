@@ -13,7 +13,7 @@ t = 600
 count = 0
 cmd = ''
 
-for algo in algos:
+for algo in ['sssp']:#algos:
   for data in datas.keys():
     cmd += "./pin -ifeellucky -t ./tracer/obj-intel64/champsim_tracer.so -o ./trace_graph/" + algo + "-" + data + ".trace -s " + str(s) + "000000 -t " + str(t+1+fast[data]) + "000000 -- ./gapbs/" + algo + " -f ./gapbs/data/" + datas[data]
     if(algo == 'sssp'):
